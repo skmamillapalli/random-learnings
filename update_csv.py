@@ -20,6 +20,7 @@ ws1_iterator = ws1.iter_rows()
 next(ws1_iterator)
 for row in ws1_iterator:
     row[0].value = data_mapper[row[0].value]
+    row[2].value = data_mapper[row[2].value]
 
 #Save as new updated_workbook    
 wb.save('updated_workbook.xlsx')
